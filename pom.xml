@@ -14,5 +14,29 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+	<dependency>
+		<groupId>org.scala-lang</groupId>
+		<artifactId>scala-library</artifactId>
+		<version>2.12.6</version>
+	</dependency>
+	 <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4.3</version>
+      <optional>true</optional>
+    </dependency>
   </dependencies>
+   <build>
+    <plugins>
+  <plugin>
+		<groupId>net.alchim31.maven</groupId>
+		<artifactId>scala-maven-plugin</artifactId>
+		<version>3.2.2</version>
+	        <configuration>
+	  	   <recompileMode>incremental</recompileMode>
+	        </configuration>
+	     </plugin>
+		 </plugins>
+		</build>
+		 
 </project>
